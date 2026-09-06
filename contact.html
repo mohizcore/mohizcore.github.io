@@ -23,13 +23,13 @@
   <div class="page-hero-text">
     <h1>Ready to get your footage cut?</h1>
     <p>Send the form and I'll reply with a quote and turnaround time — usually within a day.</p>
-    <form style="margin-top:20px; max-width:420px;">
+    <form style="margin-top:20px; max-width:420px;" action="https://formspree.io/f/mkjnvrjn" method="POST">
       <div class="form-row">
-        <div><label>First name</label><input type="text" placeholder="First name"></div>
-        <div><label>Last name</label><input type="text" placeholder="Last name"></div>
+        <div><label>First name</label><input type="text" name="first_name" placeholder="First name" required></div>
+        <div><label>Last name</label><input type="text" name="last_name" placeholder="Last name" required></div>
       </div>
-      <div><label>Email</label><input type="email" placeholder="you@email.com"></div>
-      <div><label>Message</label><textarea placeholder="Tell me about your project"></textarea></div>
+      <div><label>Email</label><input type="email" name="email" placeholder="you@email.com" required></div>
+      <div><label>Message</label><textarea name="message" placeholder="Tell me about your project" required></textarea></div>
       <button type="submit" class="submit-btn">Send</button>
     </form>
   </div>
