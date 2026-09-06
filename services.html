@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — HyPhex Edits</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .service-row{
+    display:grid; grid-template-columns:90px 1fr auto; gap:22px; align-items:center;
+    padding:22px 0; border-top:1px solid var(--line);
+  }
+  .service-row:last-child{border-bottom:1px solid var(--line);}
+  .service-thumb{width:90px; height:66px; border-radius:2px; overflow:hidden;}
+  .service-row h3{font-family:'Inter'; font-weight:700; font-size:1rem; text-transform:none; margin-bottom:4px;}
+  .service-row p{color:var(--grey); font-size:0.88rem; max-width:52ch;}
+  .service-price{font-weight:700; font-size:0.95rem; white-space:nowrap;}
+  @media(max-width:640px){
+    .service-row{grid-template-columns:60px 1fr; }
+    .service-price{grid-column:2; margin-top:6px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="site-title">HyPhex Edits</div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-text">
+    <h1>Edits that command attention</h1>
+    <p>Short-form editing, color grading, and full concept packages — priced simply, scoped clearly.</p>
+  </div>
+  <div class="page-hero-photo photo ph-2"></div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="service-row">
+      <div class="service-thumb photo ph-1"></div>
+      <div>
+        <h3>Short-form Reels Editing</h3>
+        <p>One vertical edit — hook, pacing, captions, sound sync. Raw clips in, ready-to-post file out.</p>
+      </div>
+      <div class="service-price">From $60</div>
+    </div>
+    <div class="service-row">
+      <div class="service-thumb photo ph-2"></div>
+      <div>
+        <h3>Color Grading &amp; Custom LUTs</h3>
+        <p>A grade built in DaVinci Resolve, delivered as a reusable .cube LUT for your future videos.</p>
+      </div>
+      <div class="service-price">From $40</div>
+    </div>
+    <div class="service-row">
+      <div class="service-thumb photo ph-3"></div>
+      <div>
+        <h3>Sound Design &amp; Transitions</h3>
+        <p>Match cuts, whip pans, and audio-synced transitions layered onto an existing edit.</p>
+      </div>
+      <div class="service-price">From $25</div>
+    </div>
+    <div class="service-row">
+      <div class="service-thumb photo ph-4"></div>
+      <div>
+        <h3>Brand &amp; Restaurant Concept Package</h3>
+        <p>Full concept-to-export short-form package — script, shot-list notes, edit, and grade.</p>
+      </div>
+      <div class="service-price">From $150</div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-block">
+  <div class="wrap">
+    <div>
+      <h2>Ready to book a project?</h2>
+      <p>Tell me which service fits and share your footage or brief — I'll come back with a quote.</p>
+    </div>
+    <form>
+      <div class="form-row">
+        <div><label>First name</label><input type="text" placeholder="First name"></div>
+        <div><label>Last name</label><input type="text" placeholder="Last name"></div>
+      </div>
+      <div><label>Email</label><input type="email" placeholder="you@email.com"></div>
+      <div><label>Which service?</label><input type="text" placeholder="e.g. Reels editing, color grade..."></div>
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="site-title">HyPhex Edits</div>
+    <div class="made-with">Instagram: <a href="https://instagram.com/mohiz.xyz" target="_blank">@mohiz.xyz</a></div>
+    <div class="socials">youremail@example.com</div>
+  </div>
+</footer>
+
+</body>
+</html>
