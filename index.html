@@ -31,7 +31,7 @@
 
 <section>
   <div class="wrap">
-    <div class="section-split">
+    <div class="section-split reveal-stagger reveal">
       <div class="card">
         <div class="card-photo photo ph-2"></div>
         <h3>Short-form Reels Editing</h3>
@@ -57,7 +57,7 @@
   </div>
 </section>
 
-<div class="statement-band">
+<div class="statement-band reveal">
   <div class="wrap">
     <h2>Built on the timeline, not templates</h2>
     <p>Every edit is cut around the hook and paced by hand — no auto-caption presets, no stock transitions dropped in without thought.</p>
@@ -65,9 +65,9 @@
   </div>
 </div>
 
-<div class="duo-photo photo ph-5" style="min-height:340px;"></div>
+<div class="duo-photo photo ph-5 reveal" style="min-height:340px;"></div>
 
-<div class="cta-block">
+<div class="cta-block reveal">
   <div class="wrap">
     <div>
       <h2>Have footage that needs a cut?</h2>
@@ -89,9 +89,22 @@
   <div class="wrap">
     <div class="site-title">HyPhex Edits</div>
     <div class="made-with">Instagram: <a href="https://instagram.com/mohiz.xyz" target="_blank">@mohiz.xyz</a></div>
-    <div class="socials">mohizcore@gmail.com</div>
+    <div class="socials">youremail@example.com</div>
   </div>
 </footer>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+  revealEls.forEach(el => io.observe(el));
+</script>
 
 </body>
 </html>
